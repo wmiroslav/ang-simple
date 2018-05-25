@@ -1,0 +1,13 @@
+@import "~styles/variables.scss";
+@import "~styles/mixins.scss";
+
+
+
+main {
+    background-color: white;
+    position: relative;
+    top: -60px;
+    height: 100%;
+    @include element-shadow;
+}
+

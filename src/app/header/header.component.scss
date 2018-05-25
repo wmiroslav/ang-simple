@@ -1,0 +1,53 @@
+@import "~styles/variables.scss";
+
+header {
+    background-color: $main-color;
+    .container {
+        padding-bottom: 60px;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 42px;
+        }
+        i, a {
+            color: white;
+            line-height: 42px;
+        }
+        a {
+            padding: 0 $padding;
+        }
+    }
+
+    .left {
+
+    }
+
+    // width:100%;
+    // text-align:center;
+    // background: linear-gradient(to top, #efefef, white);
+    // padding-top: 1.5em;
+    // border-bottom: 2px solid $border-color;
+    // h1 {
+    //     line-height: 1.8em;
+    // }
+    // .fa {
+    //     padding-left: 0.5em;
+    //     border-right: 2px solid $border-color;
+    //     padding-right: 0.5em;
+    // }
+    // .right, .left {
+    //     position: relative;
+    //     bottom: -0.3em;
+    // }
+
+
+
+
+
+
+}
+
+
+
+
+

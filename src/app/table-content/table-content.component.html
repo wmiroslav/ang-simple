@@ -1,0 +1,81 @@
+<div class="table-menu-container">
+
+
+
+
+  <!-- header -->
+  <div class="table-header">
+    <ul class="inline-list">
+      <li>
+        <a href="#">Inbox</a>
+      </li>
+      <li>
+        <a class="active" href="#">Nominations</a>
+      </li>
+      <li>
+        <a href="#">Details</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- search form -->
+  <form>
+    <input type="text" placeholder="Search (by product or comany)" name="filter" [(ngModel)]="filterText"><input class="btn" type="submit" value="Go">
+  </form>
+
+  <!-- product types -->
+  <div class="product-types">
+    <app-product-type [product]="product" *ngFor="let product of productTypes"></app-product-type>
+  </div>
+
+
+  <!-- product table -->
+  <div class="product-filters">
+    <p>Filtered by: {{ filteredBy }}</p>
+    <p class="items">Items ({{ products?.length }})</p>
+  </div>
+
+  <!-- product table -->
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th class="arrow"><i class="fa fa-chevron-right"></i></th>
+        <th>ID</th>
+        <th>Product</th>
+        <th>Month</th>
+        <th>Allocation</th>
+        <th>Nomination</th>
+        <th>Actual</th>
+        <th>Company</th>
+        <th>Port</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products | filter: filterText">
+        <td class="arrow"><i class="fa fa-chevron-right"></i></td>
+        <td>{{ product.id }}</td>
+        <td>
+          <div class="t-product" [style.background-color]="product.color">
+              {{ product.name }}
+          </div>
+        </td>
+        <td>{{ product.date  || '-' }}</td>
+        <td>{{ product.allocation  || '-' }}</td>
+        <td>{{ product.nomination  || '-' }}</td>
+        <td>{{ product.actual  || '-'}}</td>
+        <td>{{ product.company  || '-' }}</td>
+        <td>{{ product.port || '-' }}</td>
+        <td [colorize]="product.status">{{ product.status || '-' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- pagination -->
+  <p class="pagination">{{ pagination?.page * pagination?.countSize - pagination?.countSize + 1 }} - {{ pagination?.page * pagination?.countSize }} of {{ pagination?.total }} Items</p>
+
+
+</div>
+
+

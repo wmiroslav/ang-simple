@@ -1,0 +1,87 @@
+
+@import "~styles/variables.scss";
+
+.table-header {
+    height: $table-header-height;
+    padding: 0 $padding;
+    background-color: $gray-dark;
+    img {
+        position: relative;
+        top: 2px;
+    }
+    i {
+        line-height: $table-header-height;
+        float: right;
+        color: white;
+    }
+    a {
+        line-height: $table-header-height;
+    }
+    li {
+        position: relative;
+    }
+}
+
+form {
+    float: right;
+    padding: $padding;
+    input {
+        height: 25px;
+        color: $main-color;
+        border: none;
+        background-color: $gray-light;
+        padding-left: $padding;
+    }
+    .btn {
+        height: 25px;
+        color: white;
+        background-color: $main-color;
+        border: none;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        padding: 0 $padding/2;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $main-color;
+        opacity: 1; /* Firefox */
+        font-weight: bold;
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $main-color;
+        font-weight: bold;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $main-color;
+        font-weight: bold;
+    }
+}
+
+
+table {
+    thead {
+        background-color: $gray-dark;
+        i.fa, th {
+            color: #636363;
+        }
+    }
+    tr {
+        height: 40px;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+    }
+    th, td {
+        color: $gray;
+        line-height: 40px;
+        text-align: center;
+    }
+    i.fa {
+        font-size: 15px;
+        padding-left: 5px;
+        color: $main-color;
+    }
+
+}
+

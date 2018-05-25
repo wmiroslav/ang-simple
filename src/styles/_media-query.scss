@@ -1,0 +1,14 @@
+@import "~styles/variables.scss";
+
+//FOR DESKTOP
+@media screen and (min-width: $mobile + 1) {
+    .hide-big {
+        display: none !important;
+    }
+}
+// FOR MOBILE
+@media screen and (max-width: $mobile) {
+    .hide-small {
+        display: none !important;
+    }
+}

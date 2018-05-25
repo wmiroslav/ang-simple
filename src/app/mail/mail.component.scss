@@ -1,0 +1,22 @@
+@import "~styles/variables.scss";
+
+.mail-wrapper {
+    clear: both;
+    overflow: hidden;
+    cursor: pointer;
+    padding: $padding;
+    padding-bottom: 2*$padding;
+    h4 {
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-bottom: $padding;
+        color: black;
+    }
+    border-bottom: 1px solid $border-color;
+    p {
+        span {
+            float: right;
+            color: black;
+        }
+    }
+}

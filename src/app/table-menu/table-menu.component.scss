@@ -1,0 +1,34 @@
+@import "~styles/variables.scss";
+
+.table-menu-container {
+    border-right: 1px solid $border-color;
+    
+    width: 225px;
+    height: 100%;
+    float: left;
+    .table-menu {
+        padding: $padding 0;
+        background-color: $gray-light;
+        height: 100%;
+        li {
+            display: table;
+            margin-bottom: 4px;
+            img {
+                margin-left: 5px;
+            }
+        }
+        a {
+            vertical-align: middle;
+            display: table-cell;
+            color: $main-color;
+        }
+    }
+
+    .active {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+
+
+}

@@ -1,0 +1,46 @@
+@import "~styles/variables.scss";
+@import "~styles/mixins.scss";
+
+
+.mails-nav {
+    width:100%;
+    text-align:center;
+    padding: 0 $padding; 
+    height: 3em !important;
+    border-bottom: 1px solid $border-color;
+    .center {
+        display: inline-block;
+        p {
+            line-height: 3em;
+        }
+    }
+    .fa {
+        line-height: 1.8em;
+    }
+}
+.search-container-shadow {
+    padding: 2px;
+}
+.search-container {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    padding: $padding/2 0;
+    @include element-shadow;
+    .right {
+        a {
+            padding-right: $padding;
+        }
+    }
+    input {
+        line-height: 2em;
+    }
+}
+
+.mails-container {
+    height: 100%;
+    overflow-y: scroll;
+    .active {
+        background: $blue;
+    }
+}

@@ -1,0 +1,30 @@
+@import "~styles/variables.scss";
+
+footer {
+    padding: 3px $padding;
+    width: 100%;
+    max-width: $max-width;
+    background-color: $gray-dark;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    i, a {
+        color: white;
+    }
+    i {
+        position: relative;
+        bottom: -0.4em;
+    }
+    a {
+        margin-right: $padding;
+    }
+    button {
+        margin-right: 0.3em;
+    }
+    .left {
+        i {
+            margin-left: $padding;
+        }
+    }
+}
